@@ -463,6 +463,7 @@ nav {
 /* ============= Footer ============= */
 /* ==================================================== */
 footer {
+  /* border: 2px solid red; */
   position: relative;
   bottom: 0;
   width: 100%;
@@ -480,7 +481,6 @@ footer {
   padding: 20px 30px;
 }
 .primary-footer {
-  /* border: 2px solid black; */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding: 20px 10px;
@@ -578,6 +578,7 @@ h5.comp-name {
 }
 .secondary-footer {
   display: grid;
+  grid-gap: 10px;
   /* border: 2px solid red; */
   grid-template-columns: auto;
   padding: 20px 0px 0px 0px;
@@ -623,7 +624,7 @@ hr .solid {
     padding: 0px 0px 0px 30px;
   }
 }
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .primary-footer {
     grid-template-columns: 1fr;
     grid-gap: 30px;
@@ -655,11 +656,17 @@ hr .solid {
     grid-template-columns: 1fr;
     grid-gap: 30px;
   }
+  .column1 {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 0px 30px 0px 0px;
+  }
   .column2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0px 0px 0px 30px;
+    padding: 0px 0px 0px 0px;
   }
   .column3 {
     display: grid;
@@ -673,7 +680,56 @@ hr .solid {
   }
   hr .solid {
     border-top: 0px solid white;
-    padding: 10px 10px;
+    padding: 0px 0px;
+  }
+  .secondary-footer {
+    margin-left: -25px;
+  }
+}
+@media (max-width: 375px) {
+  footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+  }
+  .primary-footer {
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+  .column1 {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 0px 30px 0px 0px;
+  }
+  .column2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 30px 0px 0px;
+  }
+  .column3 {
+    display: grid;
+    padding: 0px 0px 0px 0px;
+    grid-gap: 10px;
+    margin-left: -10px;
+  }
+  .column4 {
+    justify-content: center;
+    position: relative;
+    display: grid;
+    padding: 0px 0px 0px 0px;
+    grid-gap: 10px;
+    margin-left: -10px;
+  }
+  hr .solid {
+    border-top: 0px solid white;
+    padding: 0px 0px;
+    margin-left: -20px;
+  }
+  .secondary-footer {
+    margin-left: -30px;
   }
 }
 /* ================================================ */

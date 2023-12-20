@@ -67,8 +67,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <hr className="solid"></hr>
+
       <div className="secondary-footer">
+        <hr className="solid"></hr>
         <div className="copyright">
           <p>
             Copyright &copy; PackMat Supply Chain Solution

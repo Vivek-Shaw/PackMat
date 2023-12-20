@@ -2,6 +2,7 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Footer from './components/Footer'
 import About from './components/About';
+import Services from './components/Services';
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <Navbar />
       <Home />
       <About/>
+      <Services />
       <Footer />
     </>
   )

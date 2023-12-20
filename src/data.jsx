@@ -1,4 +1,15 @@
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaTwitter,
+  FaInstagram,
+  FaLinkedin,
+  FaPhone,
+  FaEnvelope,
+  FaMapMarkerAlt,
+  FaWallet,
+  FaBox,
+  FaTree,
+} from "react-icons/fa";
 
 export const pageLinks = [
   { id: 1, href: "#home", text: "home" },
@@ -32,21 +43,21 @@ export const socialLinks = [
 export const services = [
   {
     id: 1,
-    icon: "fas fa-wallet fa-fw",
+    icon: <FaWallet />,
     title: "saving money",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit Asperiores, officia.",
+    text: "we specialize in providing a comprehensive range of high-quality raw materials at a very competative pricing",
   },
   {
     id: 2,
-    icon: "fas fa-tree fa-fw",
-    title: "endless hiking",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit Asperiores, officia.",
+    icon: <FaTree />,
+    title: "Eco-Friendly",
+    text: "Our commitment to sustainability extends to offering eco-friendly packaging materials that reduce environmental impact.",
   },
   {
     id: 3,
-    icon: "fas fa-socks fa-fw",
-    title: "amazing comfort",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit Asperiores, officia.",
+    icon: <FaBox />,
+    title: "Custom Packaging Solutions",
+    text: "Tailored packaging designs and solutions to suit your specific product requirements, making your brand stand out.",
   },
 ];
 export const quickLinks = [
@@ -93,4 +104,4 @@ export const footerContact = [
 export const heroImg = [
   "/src/assets/Boxes.jpeg",
   "/src/assets/plasticSheet.jpg",
-]; 
+];

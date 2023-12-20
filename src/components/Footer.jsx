@@ -37,14 +37,13 @@ const Footer = () => {
 
           <div className="content">
             <ul>
-              {quickLinks.map((quicklink)=>{
-                const {id,url,text}=quicklink;
-                return(
+              {quickLinks.map((quicklink) => {
+                const { id, url, text } = quicklink;
+                return (
                   <li key={id} className="quickLink">
                     {text}
                   </li>
-
-                )
+                );
               })}
             </ul>
           </div>
@@ -73,7 +72,7 @@ const Footer = () => {
         <div className="copyright">
           <p>
             Copyright &copy; PackMat Supply Chain Solution
-            <span id="date">{new Date().getFullYear()}</span>. all rights
+            <span id="date"> {new Date().getFullYear()}</span>. all rights
             reserved
           </p>
         </div>
@@ -83,4 +82,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
